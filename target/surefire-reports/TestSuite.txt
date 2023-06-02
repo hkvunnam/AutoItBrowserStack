@@ -1,4 +1,77 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.012 s - in TestSuite
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 3, Time elapsed: 124.695 s <<< FAILURE! - in TestSuite
+hariKRishna.browserStack.BrowserStack.multipleWindowsAndScreenShot  Time elapsed: 1.084 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [e2ad252fa45a0593c8edb90cd8d76cbf538837ec, findElement {using=css selector, value=input[name='name']}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.2, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20G314, safari:platformVersion: 11.6.2, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: e2ad252fa45a0593c8edb90cd8d..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: e2ad252fa45a0593c8edb90cd8d76cbf538837ec
+	at hariKRishna.browserStack.BrowserStack.multipleWindowsAndScreenShot(BrowserStack.java:52)
+
+hariKRishna.browserStack.BrowserStack.alerts  Time elapsed: 5.693 s  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+Encountered invalid 'type' and 'pointerType' combination in payload: {
+    actions =     (
+                {
+            deltaX = 0;
+            deltaY = 0;
+            duration = 250;
+            origin =             {
+                "element-6066-11e4-a52e-4f735466cecf" = "node-E0ED71CB-9A55-4472-8AFB-C0C68A02AC1E";
+            };
+            type = scroll;
+            x = 0;
+            y = 0;
+        }
+    );
+    id = "default wheel";
+    type = wheel;
+}
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [4a2a5822f0ffe8f3d05d937dde969561627f6a2b, actions {actions=[org.openqa.selenium.interactions.Sequence@57b7f27f]}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 14.1.2, platformName: mac, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20G314, safari:platformVersion: 11.6.2, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4a2a5822f0ffe8f3d05d937dde9..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4a2a5822f0ffe8f3d05d937dde969561627f6a2b
+	at hariKRishna.browserStack.BrowserStack.alerts(BrowserStack.java:78)
+
+hariKRishna.browserStack.BrowserStack.close  Time elapsed: 2.636 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [21d9498b665ca36c5832a699f0ea79cf2176ba87, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:3131}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 21d9498b665ca36c5832a699f0e...}
+Session ID: 21d9498b665ca36c5832a699f0ea79cf2176ba87
+	at hariKRishna.browserStack.BrowserStack.close(BrowserStack.java:38)
+
+hariKRishna.browserStack.BrowserStack.close  Time elapsed: 4.927 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+Browsing context has been discarded
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [44fb0bcfdf490eaeb7f1f394eed6735e73a9faea, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 102.0, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:processID: 9852, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 44fb0bcfdf490eaeb7f1f394eed...}
+Session ID: 44fb0bcfdf490eaeb7f1f394eed6735e73a9faea
+	at hariKRishna.browserStack.BrowserStack.close(BrowserStack.java:38)
+
+hariKRishna.browserStack.BrowserStack.alerts  Time elapsed: 9.442 s  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+Unknown action type: [object String] "wheel"
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5ec5a54b4915e30672f657bceb48c1ea4b88b529, actions {actions=[org.openqa.selenium.interactions.Sequence@15750080]}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 102.0, moz:accessibilityChecks: false, moz:buildID: 20220623063721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:processID: 1696, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 5ec5a54b4915e30672f657bceb4...}
+Session ID: 5ec5a54b4915e30672f657bceb48c1ea4b88b529
+	at hariKRishna.browserStack.BrowserStack.alerts(BrowserStack.java:78)
+
